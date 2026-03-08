@@ -1,0 +1,200 @@
+/* === PERPUSTAKAAN CILIK PASTEL FAIRY THEME === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdf4ff; 
+  color: #6b21a8; 
+  line-height: 1.6;
+}
+
+
+h1 {
+  font-family: 'Mountains of Christmas', cursive;
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.301);
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Mountains of Christmas', cursive;
+  color: #754c4c; 
+  text-shadow: 2px 2px 4px rgba(255, 206, 224, 0.5);
+  letter-spacing: 1px;
+}
+
+
+/* Kotak Header */
+header {
+  background: #ff9ec1;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(255, 233, 241, 0.4);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Header Page + Tombol Tambah */
+.header-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.header-page h2 {
+  font-size: 3rem;
+}
+
+/* Tombol Bulat + Glow */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 158, 193, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 10px 25px rgba(255, 158, 193, 0.7);
+}
+
+.btn-tambah, .btn-simpan, .btn-update {
+  background: #ff9ec1; 
+  color: white;
+}
+
+.btn-edit {
+  background: #a7e8bd; 
+  color: #4c1d95;
+}
+
+.btn-hapus, .btn-kembali {
+  background: #fff3ba; 
+  color: #6b21a8;
+}
+
+/* Tabel Buku */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(199, 210, 254, 0.4);
+  background: white;
+  border: 3px solid #ff9ec1; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgb(255, 234, 243);
+}
+
+th, td {
+  padding: 1.3rem 1.5rem;
+  text-align: left;
+}
+
+th {
+  background: #ff9ec1;
+  color: white;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.6rem;
+}
+
+tr:hover {
+  background: #fff0f5; 
+  transition: background 0.3s;
+}
+
+/* Form Tambah/Edit - Kotak Fairy */
+.form-tambah, .form-edit {
+  background: white;
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 35px rgba(167, 232, 189, 0.4);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  border: 4px dashed #ff9ec1; 
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+  color: #ff9ec1;
+  font-size: 1.3rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border: 3px solid #d7bfff;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  background: #fffaf5;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #ff9ec1;
+  box-shadow: 0 0 0 6px rgba(255, 158, 193, 0.3);
+  outline: none;
+}
+
+/* Alert Notifikasi */
+.alert {
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.alert-success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 3px solid #a7f3d0;
+}
+
+.alert-danger {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 3px solid #fecaca;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 { font-size: 2.5rem; }
+  h2 { font-size: 2.2rem; }
+  .btn { padding: 0.7rem 1.5rem; font-size: 1rem; }
+  .form-tambah, .form-edit { padding: 2rem; }
+}
